@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar py-3 navbar-expand-lg bg-black navbar-dark">
+        <nav class="navbar py-3 mb-3 navbar-expand-lg bg-black navbar-dark">
         <div class="container-fluid">
             <img src="./img/duck.png" alt="Logo" width="45" height="45" class="d-inline-block align-text-top">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,8 +41,8 @@
     <body>
         <div class="container">
             <div class="row">
-                <section class="col-12">
-                    <section class="d-flex justify-content-between py-4">
+                <section class="col-12 col-lg-9">
+                    <section class="d-flex justify-content-between mb-4">
                         <h1 class="d-inline fs-2">Catalogo Libri</h1>
                         <button type="button" class="btn btn-primary">Aggiungi libro</button>
                     </section>
@@ -165,16 +165,72 @@
                                 </td>
                             </tr>
                         </tbody>
-                        </table>
-
-
+                    </table>
                 </section>
-
-
-
-
-                <section class="col-12">
-                    
+                <section class="col-12 col-lg-3">
+                   <div class="card mb-3">
+                        <div class="card-header">
+                            <h2 class="card-title">Todo</h2>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                    <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                    <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">F.A.Q.</h2>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item ">
+                                    <a class="nav-link d-flex justify-content-between align-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>Come aggiungere un nuovo libro?</span>
+                                        <span class="d-flex justify-content-end align-middle"><img id="my-btn-dropdown" class="" src="./img/down-arrow_152415.png" alt="trash bin image"></img></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>                           
+                                <li class="list-group-item ">
+                                    <a class="nav-link d-flex justify-content-between align-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>Come posso accedere all'anagrafica utenti?</span>
+                                        <span class="d-flex justify-content-end align-middle"><img id="my-btn-dropdown" class="" src="./img/down-arrow_152415.png" alt="trash bin image"></img></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>        
+                                <li class="list-group-item ">
+                                    <a class="nav-link d-flex justify-content-between align-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>Posso usare questa dashboard da mobile?</span>
+                                        <span class="d-flex justify-content-end align-middle"><img id="my-btn-dropdown" class="" src="./img/down-arrow_152415.png" alt="trash bin image"></img></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>        
+                            </ul>
+                        </div>
+                    </div> 
                 </section>
             </div>
         </div>

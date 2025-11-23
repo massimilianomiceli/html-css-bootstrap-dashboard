@@ -1,4 +1,10 @@
 #my-btn-icon{
-    height: 16px;
     width: 16px;
+    height: 16px;
+}
+
+#my-btn-dropdown{
+    margin: auto 0;
+    height: 16px;
+
 }
