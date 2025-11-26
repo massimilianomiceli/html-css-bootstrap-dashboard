@@ -1,0 +1,7 @@
+input, textarea, textarea, select, div.form-text{
+    margin-bottom: 1rem;
+}
+
+input.titolo{
+    margin-bottom: 0rem;
+}

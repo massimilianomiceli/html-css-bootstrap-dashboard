@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap-dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/new-book-style.css">
 </head>
 <body>
     <header>
@@ -40,43 +40,62 @@
     </header>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="fs-2 pb-2">Nuovo libro</h1>                
+            <form action="">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="fs-2 pb-2">Nuovo libro</h1>                
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="nome-autore" class="form-label">Nome Autore</label>
+                        <input type="text" class="form-control" name="nomeAutore" id="nome-autore" minlength="2" maxlength="20" placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col-6">
+                        <label for="cognome-autore" class="form-label">Cognome Autore</label>
+                        <input type="text" class="form-control" name="cognomeAutore" id="cognome-autore" minlength="2" maxlength="20" placeholder="Inserisci il cognome dell'autore">                    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="titolo" class="form-label">Titolo</label>
+                        <input type="text" class="form-control titolo" name="titolo" id="titolo" minlength="2" maxlength="100" placeholder="Inserisci il titolo del libro">
+                        <div class="form-text">
+                        Titolo versione italiana
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <label for="genere" class="form-label">Genere</label>
+                        <select class="form-select" name="genere" aria-label="Default select example">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Horror</option>
+                        <option value="2">Thriller</option>
+                        <option value="3">Scientifico</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label for="anno" class="form-label">Anno di Pubblicazione</label>
+                        <input type="number" class="form-control" name="anno" id="anno" min="1" max="2100" placeholder="Inserisci l'anno">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label for="isbn" class="form-label">ISBN#</label>
+                        <input type="text" class="form-control" name="isbn" id="isbn" maxlength="13" placeholder="Inserisci il codice ISBN#">                       
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="note" class="form-label">Note</label>
+                        <textarea class="form-control" name="note" id="note" maxlength="500" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea></textarea>
+                        <input class="form-check-input" name="digitale" type="checkbox" value="" id="digitale">
+                        <label class="form-check-label" for="digitale">Disponibile anche in digitale</label>
+                        <button type="submit" class="btn btn-primary d-block">Aggiungi libro</button>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-                
-                </div>
-                <div class="col-6">
-                
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-4">
-                
-                </div>
-                <div class="col-12 col-md-4">
-                
-                </div>
-                <div class="col-12 col-md-4">
-                
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                
-                </div>
-            </div>
-
-        </div>
-            
+        </form>
     </body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
